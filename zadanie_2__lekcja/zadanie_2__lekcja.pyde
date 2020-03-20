@@ -37,5 +37,7 @@ def draw():
     circle(szerokosc, wysokosc, 70)
     
 def mousePressed():
-    exit()
+    exit() #to miało być poo okrążeniu samo, a nie na klik
+    
+#1,25 pkt bo nie są użyte kolekcje do ustawiania kolorów, a je różnież mieliśmy powtórzyć
     
