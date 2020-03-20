@@ -5,9 +5,7 @@ def setup():
     rectMode(CORNERS)
 
 def draw():
-    point(50, 50)
-    line(mouseX, mouseY, 20, 30)
-    rect(mouseX, mouseY, width, height)
+    #point(50, 50)
     print(mouseX, mouseY, mousePressed)
     
     if mousePressed:
@@ -16,7 +14,11 @@ def draw():
     else:
         print(mouseX, mouseY)
         rect(20, 50, 10, 50)
-        
+        #tego i tak nie widać podczas clear, więc może być w else i będzie lżej programowi
+        line(mouseX, mouseY, 20, 30)
+        rect(mouseX, mouseY, width, height)
+ 
+ #2pkt       
     
     
         
