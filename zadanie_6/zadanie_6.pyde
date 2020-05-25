@@ -1,6 +1,6 @@
 import math
 
-class Kolo():
+class Kolo(): # miał być kwadrat, ale koło jest analogiczne, więc może zostać
     def __init__(self, promien): 
         self.promien = promien
     def sketch(self, x, y):
@@ -21,6 +21,8 @@ class PasiasteKolo(Kolo):
             line(x+_xLinii_-r, y-math.sqrt(r * r - (r -_xLinii_) * (r -_xLinii_)), x+_xLinii_-r, y+math.sqrt(r * r - (r -_xLinii_) * (r -_xLinii_)))
             _xLinii_ -= space
             
+# miała być dopisana klasa, czyli kolejna robiąca coś dodatkowego, a nie zmienione te które były, proponuję koło w kratkę, korzystające z tego w paski, to już wystarczy
+            
 def setup():
     size(600, 600)
     maleKolo = Kolo(40) 
@@ -34,5 +36,7 @@ def setup():
     sredniePasiasteKolo.sketchPasiaste(150, 200, 12) 
     duzePasiasteKolo = PasiasteKolo(140)
     duzePasiasteKolo.sketchPasiaste(300, 100, 20)
-    duzePasiasteKolo.sketch(450, 300) 
+    duzePasiasteKolo.sketch(450, 300)
+    
+# w przypadku koła trochę trudniejsza sztuka z paskami, ale mieliście przećwiczyć dziedziczenie, a w ten sposób to zmina nazw, do któej nie trzeba być świadomym wzajemnego korzystania z siebie nawzajem
     
