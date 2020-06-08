@@ -1,0 +1,13 @@
+
+class Bankomat()
+	def wplata
+		dodanie środków na konto
+	def wyplata
+		sprawdzenie czy są środki na koncie
+
+class Klient()
+	def wplacenie_pieniedzy
+		podanie kwoty
+	def wyplacenie_pieniedzy
+		podanie kwoty
+		spawdzenie dostepnych środków
