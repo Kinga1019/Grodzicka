@@ -22,12 +22,12 @@ class PasiasteKolo(Kolo):
             _xLinii_ -= space
             
 class KoloroweKolo(Kolo):
-    def sketchKolorowe(self, x, y, r, g, b):
+    def sketchKolorowe(self, x, y, r, g, b): # warto przy dużej liczbie argumentów je zagregować, by nie przekazywać kilku, a jedne, np. jako listę
         Kolo.sketch(self, x, y)
         self.r = r
         self.g = g
         self.b = b
-        fill(self.r, self.g, self.b)
+        fill(self.r, self.g, self.b) # to zmienikolor dla wszystkich przyszłych, a nie danego koła, więc trochę nie gra
             
 def setup():
     size(600, 600)
@@ -49,4 +49,4 @@ def setup():
     duzePasiasteKolo = PasiasteKolo(140)
     duzePasiasteKolo.sketchPasiaste(300, 100, 20)
     duzePasiasteKolo.sketch(450, 300) 
-    
+# 1,75pkt
