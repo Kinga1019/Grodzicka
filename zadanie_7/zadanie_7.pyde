@@ -34,8 +34,10 @@ class Hedgehog(Pet):
         return 'PISK'
     def gimmeHog(self):
         image(loadImage("jez.png"), random(50, width-70), random(50, height-100))
-    def __radd__(self, other): 
-        return self.name[0]+ ' i ' - other.name[0]
+    def __radd__(self, other): #nie kojarzę takiej funkcji wbudowanej, a na pewno nie odpowiada za odejmowanie
+        return self.name[0]+ ' i ' - other.name[0] # nie zadziałą, bo jak ma odjąć pierwsze litery od siebie?
+    def __sub__(self, other): # jakby sprawdzić w specyfikacji to tak włąśnie brzmi zarezerwowana wbudowana nazwa na operację odejmowania
+        pass # tu trzebaby zaimplementować co ma się zadziać jeżeli odejmujemy od siebie jeże
         
 def setup():
     size(600,600)
@@ -52,7 +54,8 @@ def setup():
     print(rex+benio) 
     print(isinstance(benio, Pet))
     print(benio+kuro)
-    print(skrypcik+skrypcik) 
+    print(kuro - kenma)
+    print(skrypcik+skrypcik)  # nie wywołujesz odejmowania, a wciąż dodawanie, które jest zaimplementowane w innych klasach
 
 def draw(): 
     pass
@@ -64,3 +67,5 @@ def mouseClicked():
             pet.gimmePaw() 
         if isinstance(pet, Hedgehog):
             pet.gimmeHog()
+            
+# 1,5pkt
