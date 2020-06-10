@@ -1,13 +1,20 @@
 
 class Bankomat()
+	zasoby_pieniezne_bankomatu
+	konta
 	def wplata
 		dodanie środków na konto
 	def wyplata
 		sprawdzenie czy są środki na koncie
 
-class Klient()
+class Klient() # klient może mieć wiele kont, może lepza byłoby karta albo konto?? tak na prawdę to z kartą bankomat ma styczność i z systemem banku, który ma informacje o kontach
+	posiadana_ilosc_pieniedzy # przydałoby się pole w tym stylu, nieprawdaż? ;)
+	pin
 	def wplacenie_pieniedzy
 		podanie kwoty
 	def wyplacenie_pieniedzy
 		podanie kwoty
 		spawdzenie dostepnych środków
+
+brak przemyślenia atrybutów
+0,75/1,5pkt za tą część
