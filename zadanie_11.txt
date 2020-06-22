@@ -1,0 +1,9 @@
+Studio projektujące gry komputerowe 
+Game designer do zespołu:
+Potrzebujemy przedmioty, które będę utrudniały 
+ukończenie gry.
+Programista:
+Do zrobienia jest obiekt, który będzie posiadał 
+kolizję z graczem oraz skrypt posiadający dostęp 
+do komponentu przetrzymującego życie gracza.
+Wzorzec: fasada
