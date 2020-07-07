@@ -55,14 +55,10 @@ def draw():
 def mouseClicked(): 
     if mouseX >100 and mouseX<200:
         if mouseY >10 and mouseY <30:
-            library.lendBook(Madzia.requestBook("Naocznosc")) 
+            library.lendBook(Madzia.requestBook("Naocznosc"))
+            library.lendBook(Kinga.requestBook("Szostka wron"))
         if mouseY >40 and mouseY <60:
             library.addBook(Madzia.returnBook())
-            pass
-    if mouseX >100 and mouseX<200:
-        if mouseY >10 and mouseY <30:
-            library.lendBook(Kinga.requestBook("Szostka wron")) 
-        if mouseY >40 and mouseY <60:
             library.addBook(Kinga.returnBook())
 
 import unittest
@@ -86,3 +82,5 @@ class TestBook(unittest.TestCase):
         
 if __name__ == '__main__':
     unittest.main()
+    
+# 2 pkt
