@@ -1,13 +1,10 @@
-import random
-
 def setup():
     global jez, ramkaC, ramkaN
     size(800, 800)
     textSize(40)
     jez = loadImage("jez.jpg")
-    ramkaC = loadImage("ramkaCzerwona.png")
+    ramkaC = loadImage("ramkaCzerwona.png") # rysowanie ramek z grafiki, zamiast z kodu (stroke z rect) powoduje pewną incepcję, bo wypadałoby sprawdzić rónież ramki pod kątem wczytania
     ramkaN = loadImage("ramkaNiebieska.png")
-    print(random.random())
     print(type(jez))
     print(type(ramkaC))
     print(type(ramkaN))
@@ -29,3 +26,5 @@ def draw():
         
 def mousePressed():
     exit()
+    
+#1,75pkt
